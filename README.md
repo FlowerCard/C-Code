@@ -3,3 +3,4 @@
 
 
 C#的输出语句是Console.Write("Hello World !");
+C#打印语句中可以打印并换行的是Console.WriteLine("");

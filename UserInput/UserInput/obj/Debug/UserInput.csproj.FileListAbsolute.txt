@@ -1,0 +1,5 @@
+D:\VS Files\UserInput\UserInput\bin\Debug\UserInput.exe.config
+D:\VS Files\UserInput\UserInput\bin\Debug\UserInput.exe
+D:\VS Files\UserInput\UserInput\bin\Debug\UserInput.pdb
+D:\VS Files\UserInput\UserInput\obj\Debug\UserInput.exe
+D:\VS Files\UserInput\UserInput\obj\Debug\UserInput.pdb

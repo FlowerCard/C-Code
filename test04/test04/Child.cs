@@ -11,6 +11,7 @@ namespace test04
     /// </summary>
     class Child
     {
+        //访问修饰符，public 公用的，private 私有的
         public string _name;//姓名
         public string _sex;//性别
         public int _age;//年龄

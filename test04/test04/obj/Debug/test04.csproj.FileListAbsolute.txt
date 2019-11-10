@@ -1,0 +1,6 @@
+D:\VS Files\test04\test04\bin\Debug\test04.exe.config
+D:\VS Files\test04\test04\bin\Debug\test04.exe
+D:\VS Files\test04\test04\bin\Debug\test04.pdb
+D:\VS Files\test04\test04\obj\Debug\test04.csprojAssemblyReference.cache
+D:\VS Files\test04\test04\obj\Debug\test04.exe
+D:\VS Files\test04\test04\obj\Debug\test04.pdb

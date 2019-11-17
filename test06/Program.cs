@@ -10,11 +10,12 @@ namespace test06
     {
         static void Main(string[] args)
         {
-            Child child = new Child();//构造方法的调用
+            Child child = new Child("田翠花","女",5);//构造方法的调用
+            
             Console.WriteLine("我的名字是{0}", child.Name);
-            Console.WriteLine("我的名字是{0}", child.Name);
-            Console.WriteLine("我的名字是{0}", child.Name);
-            Console.WriteLine("我的名字是{0}", child.Name);
+            Console.WriteLine("我是{0}生", child.Sex);
+            Console.WriteLine("我的年龄是{0}", child.Age);
+            //Console.WriteLine("我的名字是{0}", child.Name);
             //double sum;
             //sum = child.Sum(3, 4);
             //Console.WriteLine("和为{0}", sum);

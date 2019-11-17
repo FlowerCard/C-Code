@@ -96,5 +96,13 @@ namespace test06
             Age = 5;
             Height = 160;
         }
+
+
+        public Child(string name,string sex,int age)
+        {
+            Name = name;
+            Sex = sex;
+            Age = age;
+        }
     }
 }

@@ -98,11 +98,17 @@ namespace test06
         }
 
 
+        /// <summary>
+        /// this 当前对象
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="sex"></param>
+        /// <param name="age"></param>
         public Child(string name,string sex,int age)
         {
-            Name = name;
-            Sex = sex;
-            Age = age;
+            this.name = name;
+            this.sex = sex;
+            this.age = age;
         }
     }
 }

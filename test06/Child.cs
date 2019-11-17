@@ -92,6 +92,9 @@ namespace test06
         public Child()
         {
             Name = "周星星";
+            Sex = "男";
+            Age = 5;
+            Height = 160;
         }
     }
 }

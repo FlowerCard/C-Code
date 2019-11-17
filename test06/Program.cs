@@ -12,6 +12,9 @@ namespace test06
         {
             Child child = new Child();//构造方法的调用
             Console.WriteLine("我的名字是{0}", child.Name);
+            Console.WriteLine("我的名字是{0}", child.Name);
+            Console.WriteLine("我的名字是{0}", child.Name);
+            Console.WriteLine("我的名字是{0}", child.Name);
             //double sum;
             //sum = child.Sum(3, 4);
             //Console.WriteLine("和为{0}", sum);

@@ -9,7 +9,7 @@ namespace test06
     class Child
     {
         private string name;
-        private string sex;
+        private Gender sex=Gender.男;
         private int age;
         private int height;
 
@@ -32,7 +32,7 @@ namespace test06
         /// <summary>
         /// 性别
         /// </summary>
-        public string Sex
+        public Gender Sex
         {
             get
             {
@@ -91,10 +91,7 @@ namespace test06
 
         public Child()
         {
-            Name = "周星星";
-            Sex = "男";
-            Age = 5;
-            Height = 160;
+           
         }
 
 
@@ -104,11 +101,17 @@ namespace test06
         /// <param name="name"></param>
         /// <param name="sex"></param>
         /// <param name="age"></param>
-        public Child(string name,string sex,int age)
+        public Child(string name,Gender sex,int age)
         {
             this.name = name;
             this.sex = sex;
             this.age = age;
+        }
+
+        public Child(string name,int age)
+        {
+            Name = name;
+            Age = age;
         }
     }
 }

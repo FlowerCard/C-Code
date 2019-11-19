@@ -18,7 +18,10 @@ namespace PetShop
 
     public class Dog : Pet
     {
-
+        new public void PrintName()
+        {
+            Console.WriteLine("宠物的名字是" + Name);
+        }
     }
 
     public class Cat : Pet

@@ -22,7 +22,7 @@ namespace _15黄子豪sy3_3
 
             string name = textBox1.Text;
             string gender = textBox2.Text;
-            string yearOfBirth = textBox3.Text;
+            DateTime yearOfBirth = dateTimePicker1.Value;
 
             Person person = new Person(name,gender,yearOfBirth);
             label4.Text = person.getInfo();
@@ -33,10 +33,10 @@ namespace _15黄子豪sy3_3
     {
         string MyName;
         string MyGender;
-        string MyYearOfBirth;
+        DateTime MyYearOfBirth;
         int age;
 
-        public Person(string name,string gender,string yearOfBirth)
+        public Person(string name,string gender,DateTime yearOfBirth)
         {
             MyName = name;
             MyGender = gender;
@@ -47,7 +47,7 @@ namespace _15黄子豪sy3_3
 
         public string MyName1 { get => MyName; set => MyName = value; }
         public string MyGender1 { get => MyGender; set => MyGender = value; }
-        public string MyYearOfBirth1 { get => MyYearOfBirth; set => MyYearOfBirth = value; }
+        public DateTime MyYearOfBirth1 { get => MyYearOfBirth; set => MyYearOfBirth = value; }
 
         public string getInfo()
         {
@@ -65,7 +65,18 @@ namespace _15黄子豪sy3_3
             }
 
             DateTime dateTime = DateTime.Now;
-            age = dateTime.Year - int.Parse(MyYearOfBirth);
+            int year = MyYearOfBirth.Year;
+            int month = MyYearOfBirth.Month;
+            int day = MyYearOfBirth.Day;
+            age = dateTime.Year - year;
+            if (month < dateTime.Month)
+            {
+                age -= 1;
+            }
+            if (day < dateTime.Day)
+            {
+                age -= 1;
+            }
             //age = dateTime.Year - Convert.ToInt32(MyYearOfBirth);
 
             string info;

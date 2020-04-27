@@ -73,7 +73,7 @@ namespace _15黄子豪sy3_3
             {
                 age -= 1;
             }
-            if (day < dateTime.Day)
+            else if( month >= dateTime.Month && day < dateTime.Day)
             {
                 age -= 1;
             }

@@ -22,12 +22,13 @@ namespace _15黄子豪sy3_3
 
             string name = textBox1.Text;
             string gender = textBox2.Text;
-            DateTime yearOfBirth = dateTimePicker1.Value;
-
-            Person person = new Person(name, gender, yearOfBirth);
             string tID = textBox3.Text;
+            DateTime yearOfBirth = dateTimePicker1.Value;
             DateTime tStartYear = dateTimePicker2.Value;
+            //实例化类
+            Person person = new Person(name, gender, yearOfBirth);
             Teacher teacher = new Teacher(name,tID, tStartYear);
+            //输出信息
             label4.Text = person.getInfo() + teacher.getTInfo();
 
 
@@ -36,12 +37,14 @@ namespace _15黄子豪sy3_3
 
     public class Person
     {
+        //初始化
         protected string MyName="";
         protected string MyGender="";
         protected DateTime MyYearOfBirth=DateTime.Now;
         protected int age;
         protected string info;
 
+        //生成构造函数
         public Person()
         {
 
@@ -54,12 +57,13 @@ namespace _15黄子豪sy3_3
             MyYearOfBirth = yearOfBirth;
         }
 
+        //封装字段
         public int Age => age;
-
         public string MyName1 { get => MyName; set => MyName = value; }
         public string MyGender1 { get => MyGender; set => MyGender = value; }
         public DateTime MyYearOfBirth1 { get => MyYearOfBirth; set => MyYearOfBirth = value; }
 
+        //获取信息、计算年龄
         public string getInfo()
         {
             if (MyGender == "男" || MyGender == "男生" || MyGender == "男人")
@@ -105,16 +109,19 @@ namespace _15黄子豪sy3_3
         private int tAge;
         private string tInfo;
 
+        //封装字段
         protected string MyTID { get => myTID; set => myTID = value; }
         protected DateTime MyTStartYear { get => myTStartYear; set => myTStartYear = value; }
         protected int TAge { get => tAge; }
-
+        //生成构造函数
         public Teacher(string name,string tID,DateTime tStartYear)
         {
             this.MyName = name;
             this.MyTID = tID;
             this.MyTStartYear = tStartYear;
         }
+
+        //获取信息、计算教龄
         public string getTInfo()
         {
 

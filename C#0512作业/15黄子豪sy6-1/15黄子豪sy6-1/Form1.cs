@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//引用Data库
 using System.Data;
 using System.Data.SqlClient;
 
@@ -20,7 +19,6 @@ namespace _15黄子豪sy6_1
         public Form1()
         {
             InitializeComponent();
-            //Source=服务器名
             sql.ConnectionString = "server=.;Data Source=DESKTOP-VSKS0LK;Initial Catalog=student_course;Persist Security Info=True;User ID=sa;Password=SIhunmie27.";
         }
 

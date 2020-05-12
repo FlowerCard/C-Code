@@ -35,7 +35,7 @@ namespace _15黄子豪sy6_2
             cmd02.ExecuteNonQuery();
             sql.Close();
 
-            if(UserName!=reUserName || PassWord != rePassWord)
+            if (UserName != reUserName || PassWord != rePassWord)
             {
                 MessageBox.Show("账号或密码错误", "提示");
             }

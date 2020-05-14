@@ -35,8 +35,8 @@ namespace _15黄子豪sy6_2
                 string sqlPassWord = "select psw from admin where id='" + UserName + "'";
                 SqlCommand cmd02 = new SqlCommand(sqlPassWord, sql);
                 sql.Open();
-                string reUserName = cmd01.ExecuteScalar().ToString();
-                string rePassWord = cmd02.ExecuteScalar().ToString();
+                reUserName = cmd01.ExecuteScalar().ToString();
+                rePassWord = cmd02.ExecuteScalar().ToString();
                 sql.Close();
             }
             catch

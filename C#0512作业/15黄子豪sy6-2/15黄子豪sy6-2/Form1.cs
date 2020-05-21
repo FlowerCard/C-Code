@@ -19,7 +19,7 @@ namespace _15黄子豪sy6_2
         {
             InitializeComponent();
             //SqlServer链接字符串
-            sql.ConnectionString = "server=.;Data Source=DESKTOP-VSKS0LK;Initial Catalog=student_course;Persist Security Info=True;User ID=sa;Password=SIhunmie27.";
+            sql.ConnectionString = "server=.;Data Source=DESKTOP-VSKS0LK;Initial Catalog=student_course;Persist Security Info=True;User ID=sa;Password=";
         }
 
         private void button1_Click(object sender, EventArgs e)

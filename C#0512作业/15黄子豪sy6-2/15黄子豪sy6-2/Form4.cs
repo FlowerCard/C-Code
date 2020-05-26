@@ -13,10 +13,13 @@ namespace _15黄子豪sy6_2
 {
     public partial class Form4 : Form
     {
-        SqlConnection sql = new SqlConnection();
-        SqlCommand sqlCmd = new SqlCommand();
-        SqlDataAdapter sqlAda = new SqlDataAdapter();
-        DataSet ds = new DataSet();
+        public SqlConnection sql = new SqlConnection();
+        public SqlCommand sqlCmd = new SqlCommand();
+        public SqlDataAdapter sqlAda = new SqlDataAdapter();
+        public DataSet ds = new DataSet();
+        public string Cstring = "server=.;Data Source=DESKTOP-VSKS0LK;Initial Catalog=student_course;Persist Security Info=True;User ID=sa;Password=SIhunmie27.";
+
+
         string StuName = "";
         string CouName = "";
 
@@ -25,7 +28,7 @@ namespace _15黄子豪sy6_2
         public Form4()
         {
             InitializeComponent();
-            sql.ConnectionString = "server=.;Data Source=DESKTOP-VSKS0LK;Initial Catalog=student_course;Persist Security Info=True;User ID=sa;Password=";
+            sql.ConnectionString = Cstring;
         }
 
         private void Form4_Load(object sender, EventArgs e)

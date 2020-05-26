@@ -17,7 +17,7 @@ namespace _15黄子豪sy6_2
         public Form2()
         {
             InitializeComponent();
-            sql.ConnectionString = "server=.;Data Source=DESKTOP-VSKS0LK;Initial Catalog=student_course;Persist Security Info=True;User ID=sa;Password=";
+            sql.ConnectionString = "server=.;Data Source=DESKTOP-VSKS0LK;Initial Catalog=student_course;Persist Security Info=True;User ID=sa;Password=SIhunmie27.";
         }
 
         private void button1_Click(object sender, EventArgs e)
